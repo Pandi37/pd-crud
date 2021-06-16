@@ -13,7 +13,7 @@ var postMessageRoutes = require('./controllers/postMessageController')
 
 var app = express()
 app.use(bodyParser.json())
-app.use(cors({origin:'http://localhost:3000'}))
+app.use(cors({origin:'https://pd-crud.netlify.app/'}))
 app.listen(port, () => {
     console.log(`Server started at : ${port}`)
 })
